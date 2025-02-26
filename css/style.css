@@ -27,7 +27,6 @@ body {
 .navbar a:hover {
    text-decoration: underline;
 }
-/* Main Content Layout */
 .container {
    display: flex;
    justify-content: center;
