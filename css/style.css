@@ -1,1 +1,68 @@
-
+/* General Styles */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f5e0c4;
+}
+/* Header */
+.header {
+   background-color: #c2966f;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   font-size: 24px;
+   font-weight: bold;
+}
+/* Navigation Bar */
+.navbar {
+   display: flex;
+   justify-content: center;
+   background-color: #d4a97d;
+   padding: 10px 0;
+}
+.navbar a {
+   color: white;
+   text-decoration: none;
+   padding: 14px 20px;
+   font-weight: bold;
+}
+.navbar a:hover {
+   text-decoration: underline;
+}
+/* Main Content Layout */
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 20px;
+   gap: 20px;
+}
+/* Sidebar Image Boxes */
+.image-box {
+   width: 200px;
+   height: 200px;
+   background-color: #c2966f;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-weight: bold;
+}
+/* Text Content */
+.text-box {
+   max-width: 600px;
+   background-color: #c2966f;
+   padding: 20px;
+   color: white;
+   line-height: 1.6;
+   text-align: justify;
+}
+/* Footer */
+.footer {
+   background-color: #c2966f;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   margin-top: 20px;
+}
