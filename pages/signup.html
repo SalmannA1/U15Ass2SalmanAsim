@@ -26,12 +26,74 @@
     </header>
     <main>
         <h2>Create an Account</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Sign Up</button>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Sign-Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .signup-box {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        .signup-box h2 {
+            margin-bottom: 20px;
+            color: #444;
+            text-align: center;
+        }
+        .signup-box input[type="text"],
+        .signup-box input[type="email"],
+        .signup-box input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signup-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .signup-box button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-box">
+        <h2>Sign Up</h2>
+        <form action="/submit" method="post">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="text" name="contact_details" placeholder="Contact Details" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="tel" name="mobile_number" placeholder="Mobile Number" required>
+            <input type="text" name="social_media" placeholder="Social Media Handle">
+            <input type="email" name="email_address" placeholder="Email Address" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+
             <style>
                   body {
    font-family: Arial, sans-serif;
