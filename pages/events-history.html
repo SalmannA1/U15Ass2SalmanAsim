@@ -12,9 +12,9 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #4CAF50;
+            background: url('header-image.jpg') no-repeat center center/cover;
             color: white;
-            padding: 10px 0;
+            padding: 60px 0;
             text-align: center;
         }
         nav {
@@ -29,11 +29,20 @@
             text-align: center;
         }
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #4CAF50;
+            color: white;
         }
         .container {
             padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #333;
+        }
+        section p {
+            color: #666;
         }
         footer {
             background-color: #333;
@@ -44,11 +53,17 @@
             width: 100%;
             bottom: 0;
         }
+        .image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Our Charity</h1>
+        <p>Making a difference in the community</p>
     </header>
     <nav>
         <a href="#home">Homepage</a>
@@ -60,26 +75,32 @@
     </nav>
     <div class="container">
         <section id="home">
+            <img src="home-image.jpg" alt="Charity Work" class="image">
             <h2>Homepage</h2>
             <p>Welcome to our charity website. We are dedicated to making a difference.</p>
         </section>
         <section id="about">
+            <img src="about-image.jpg" alt="About Us" class="image">
             <h2>About Us</h2>
             <p>Learn more about our mission, vision, and the team behind our charity.</p>
         </section>
         <section id="signup">
+            <img src="signup-image.jpg" alt="Sign Up" class="image">
             <h2>Sign Up</h2>
             <p>Join us as a volunteer or supporter. Sign up today!</p>
         </section>
         <section id="dates">
+            <img src="dates-image.jpg" alt="Dates & Fees" class="image">
             <h2>Dates & Fees</h2>
             <p>Find out about our upcoming events and the associated fees.</p>
         </section>
         <section id="games">
+            <img src="games-image.jpg" alt="Educational Games" class="image">
             <h2>Educational Games</h2>
             <p>Engage with our educational games designed for all ages.</p>
         </section>
         <section id="events">
+            <img src="events-image.jpg" alt="Events History" class="image">
             <h2>Events History</h2>
             <p>Explore the history of our past events and their impact.</p>
         </section>
