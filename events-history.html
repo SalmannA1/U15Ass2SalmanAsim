@@ -3,52 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Events History - Slovenské Vzdelávacie Centrum</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Image.jpg" alt="logo">
+            <img src="../images/Image.jpg" alt="logo">
         </div>
         <h1>Slovenské Vzdelávacie Centrum – Manchester</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Homepage</a></li>
+                <li><a href="../index.html">Homepage</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
                 <li><a href="dates-fees.html">Dates & Fees</a></li>
-                <li><a href="educational-games.html" class="active">Educational Games</a></li>
-                <li><a href="events-history.html">Events History</a></li>
+                <li><a href="educational-games.html">Educational Games</a></li>
+                <li><a href="events-history.html" class="active">Events History</a></li>
             </ul>
         </nav>
     </header>
     
-    
-    <!-- Main content section -->
+    <!-- Main Content -->
     <main>
         <h2>Events History</h2>
-        <p>At Slovenské Vzdelávacie Centrum – South Manchester, we believe that Slovak culture should be experienced, not just learned. That’s why we organise a variety of events for everyone—families, children, adults, and individuals who simply want to connect with Slovak heritage, make new friends, and enjoy great company.</p>
+        <p>At Slovenské Vzdelávacie Centrum – South Manchester, we believe that Slovak culture should be experienced, not just learned. That’s why we organize a variety of events for everyone—families, children, adults, and individuals who simply want to connect with Slovak heritage, make new friends, and enjoy great company.</p>
         <p>Whether you’re a parent wanting to engage your child in Slovak traditions, a single professional looking to expand your social circle, or someone who just loves Slovak culture, our variety of events and workshops provides a welcoming space where people can enjoy themselves, have fun, eat traditional Slovak food, and build lasting connections.</p>
-        <p>Some come for the cultural experience, some come to practise their Slovak, and others just come to enjoy good company over a coffee or a glass of wine. Whatever your reason, you are always welcome.</p>
+        <p>Some come for the cultural experience, some come to practice their Slovak, and others just come to enjoy good company over a coffee or a glass of wine. Whatever your reason, you are always welcome.</p>
         
-        <h2>Upcoming Events</h2>
-        <p>Easter Workshop (6th April)</p>
+        <h3>Upcoming Events</h3>
+        <p><strong>Easter Workshop (6th April)</strong></p>
         <p>This hands-on event will offer something for everyone—families, individuals, and anyone who enjoys arts, crafts, and festive traditions. Join us in decorating eggs using traditional Slovak techniques, creating beautiful Easter crafts, and learning about the unique customs that make Slovak Easter so special.</p>
         <p>But this event is more than just a workshop—it's also a social gathering where you can meet new people, enjoy great company, and experience a warm community atmosphere. Whether you're coming with friends, family, or on your own, you’ll find a friendly, relaxed environment where connections happen naturally over delicious Slovak food and drinks.</p>
         
-        <h2>Past Events</h2>
-        <p>Our past events have brought together people of all ages and backgrounds to celebrate, learn, and enjoy Slovak traditions in real life.</p>
-        <p>Fašiangový Karneval</p>
+        <h3>Past Events</h3>
+        <p><strong>Fašiangový Karneval</strong></p>
         <p>A traditional Slovak carnival full of masks, costumes, music, and dancing. A fun opportunity for both kids and adults to enjoy the vibrant and playful atmosphere of this centuries-old tradition.</p>
     </main>
     
-    <!-- Footer section -->
+    <!-- Footer -->
     <footer>
-       
+        <nav>
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="dates-fees.html">Dates & Fees</a></li>
+                <li><a href="educational-games.html">Educational Games</a></li>
+                <li><a href="events-history.html">Events History</a></li>
+            </ul>
+        </nav>
         <p>&copy; 2023 Charity Organization</p>
     </footer>
 </body>
@@ -56,22 +63,32 @@
 <style>
     /* General styles */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f5f5f5;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #e60000;
     color: #fff;
+    width: 100%;
     border-bottom: 2px solid #333;
+}
+
+header h1 {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
 }
 
 .logo img {
@@ -95,6 +112,9 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
+    background-color: #e60000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -103,13 +123,19 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 40px;
+    flex: 1;
+    padding: 40px 20px;
     background-color: #fff;
     color: #333;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 h2 {
     color: #e60000;
+    text-align: center;
 }
 
 footer {
@@ -117,6 +143,8 @@ footer {
     background-color: #e60000;
     color: #fff;
     border-top: 2px solid #333;
+    width: 100%;
+    text-align: center;
 }
 
 footer nav ul {
@@ -127,5 +155,21 @@ footer nav ul {
 
 footer nav ul li {
     margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
 }
 </style>
