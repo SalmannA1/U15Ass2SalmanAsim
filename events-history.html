@@ -12,7 +12,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Image.jpg" alt="logo">
+            <img src="images/logo.jpg" alt="logo">
         </div>
         <h1>Slovenské Vzdelávacie Centrum – Manchester</h1>
         <nav>
@@ -35,18 +35,28 @@
         <p>Some come for the cultural experience, some come to practice their Slovak, and others just come to enjoy good company over a coffee or a glass of wine. Whatever your reason, you are always welcome.</p>
         
         <h3>Upcoming Events</h3>
-        <p><strong>Easter Workshop (6th April)</strong></p>
-        <p>This hands-on event will offer something for everyone—families, individuals, and anyone who enjoys arts, crafts, and festive traditions. Join us in decorating eggs using traditional Slovak techniques, creating beautiful Easter crafts, and learning about the unique customs that make Slovak Easter so special.</p>
-        <p>But this event is more than just a workshop—it's also a social gathering where you can meet new people, enjoy great company, and experience a warm community atmosphere. Whether you're coming with friends, family, or on your own, you’ll find a friendly, relaxed environment where connections happen naturally over delicious Slovak food and drinks.</p>
+        <div class="event-card">
+            <img src="../images/easter-workshop.jpg" alt="Easter Workshop">
+            <div class="event-info">
+                <h4>Easter Workshop (6th April)</h4>
+                <p>This hands-on event will offer something for everyone—families, individuals, and anyone who enjoys arts, crafts, and festive traditions. Join us in decorating eggs using traditional Slovak techniques, creating beautiful Easter crafts, and learning about the unique customs that make Slovak Easter so special.</p>
+                <p>But this event is more than just a workshop—it's also a social gathering where you can meet new people, enjoy great company, and experience a warm community atmosphere. Whether you're coming with friends, family, or on your own, you’ll find a friendly, relaxed environment where connections happen naturally over delicious Slovak food and drinks.</p>
+            </div>
+        </div>
         
         <h3>Past Events</h3>
-        <p><strong>Fašiangový Karneval</strong></p>
-        <p>A traditional Slovak carnival full of masks, costumes, music, and dancing. A fun opportunity for both kids and adults to enjoy the vibrant and playful atmosphere of this centuries-old tradition.</p>
+        <div class="event-card">
+            <img src="../images/fasiangovy-karneval.jpg" alt="Fasiangovy Karneval">
+            <div class="event-info">
+                <h4>Fašiangový Karneval</h4>
+                <p>A traditional Slovak carnival full of masks, costumes, music, and dancing. A fun opportunity for both kids and adults to enjoy the vibrant and playful atmosphere of this centuries-old tradition.</p>
+            </div>
+        </div>
     </main>
     
     <!-- Footer -->
     <footer>
-        
+     
         <p>&copy; 2023 Charity Organization</p>
     </footer>
 </body>
@@ -124,9 +134,42 @@ main {
     box-sizing: border-box;
 }
 
-h2 {
+h2, h3 {
     color: #e60000;
     text-align: center;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.event-info {
+    text-align: left;
+    color: #333;
+}
+
+.event-info h4 {
+    color: #e60000;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -161,6 +204,15 @@ footer nav ul li {
     }
     nav ul li {
         margin: 5px 0;
+    }
+    .event-card {
+        flex-direction: column;
+    }
+    .event-card img {
+        width: 100%;
+    }
+    .event-info {
+        text-align: center;
     }
 }
 </style>
