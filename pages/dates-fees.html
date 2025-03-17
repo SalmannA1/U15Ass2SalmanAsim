@@ -4,107 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Homepage</title>
+    <title>Dates & Fees - Slovenské Vzdelávacie Centrum</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #A8A9AE;
-            border-bottom: 2px solid black;
-        }
-
-        .logo img {
-            width: 60px;
-            height: 60px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-            margin: 0 5px;
-        }
-
-        main {
-            padding: 20px;
-            background-color: #f8f8f8;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            max-width: 800px;
-            background: white;
-            text-align: left;
-            margin: 20px auto;
-        }
-
-        th,
-        td {
-            border: 1px solid black;
-            padding: 10px;
-        }
-
-        th {
-            background-color: lightgreen;
-        }
-
-        strong {
-            font-weight: bold;
-        }
-
-        footer {
-            padding: 10px;
-            background-color: #A8A9AE;
-            border-top: 2px solid black;
-        }
-
-        footer nav ul {
-            justify-content: center;
-            display: flex;
-            padding: 10px 0;
-        }
-
-        footer nav ul li {
-            margin: 0 10px;
-        }
-    </style>
 </head>
 
 <body>
-
+    <!-- Header section with logo and navigation menu -->
     <header>
         <div class="logo">
             <img src="../images/Image.jpg" alt="logo">
         </div>
-        <h1>Slovenské Vzdelávacie Centrum - Manchester</h1>
+        <h1>Slovenské Vzdelávacie Centrum – Manchester</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Homepage</a></li>
@@ -117,17 +28,15 @@
         </nav>
     </header>
 
+    <!-- Main content section -->
     <main>
-        <h2>Dates & Fees!</h2>
+        <h2>Dates & Fees</h2>
         <p>At Slovenské Vzdelávacie Centrum – South Manchester, we divide our academic year into four terms: Autumn, Winter, Spring, and Summer. This structure allows us to build learning themes and activities around seasonal and cultural events, while also ensuring alignment with South Manchester (Trafford Council) school holidays.</p>
 
         <p>We offer Saturday Slovak language lessons at two locations:</p>
-
         <p>📍 Morning (AM) Sessions: 10:00 – 12:00 at The Firs Primary School </p>
-
         <p>📍 Afternoon (PM) Sessions: 14:00 – 16:00 at Sale High School</p>
-
-        <p>Although we primarily serve South Manchester, we welcome students from all areas.​</p>
+        <p>Although we primarily serve South Manchester, we welcome students from all areas.</p>
 
         <!-- School Terms Table -->
         <table>
@@ -167,10 +76,11 @@
                 <td><strong>Summer holiday</strong> after term ends</td>
             </tr>
         </table>
+
+        <p>Note: Term dates align with Trafford Council school holidays where possible, though some variations may apply.</p>
     </main>
 
-    <p>Note: Term dates align with Trafford Council school holidays where possible, though some variations may apply.</p>
-
+    <!-- Footer section -->
     <footer>
         <nav>
             <ul>
@@ -184,7 +94,89 @@
         </nav>
         <p>&copy; 2023 Charity Organization</p>
     </footer>
-
 </body>
 
 </html>
+<style>
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A8A9AE;
+    border-bottom: 2px solid black;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px; /* Added padding for button effect */
+    background-color: #f4f4f4; /* Background color for buttons */
+    border: 1px solid #ccc; /* Border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+nav ul li a:hover {
+    background-color: #ddd; /* Hover effect for buttons */
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+main {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    text-align: left;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+th {
+    background-color: lightgreen;
+}
+strong {
+    font-weight: bold;
+}
+footer {
+    padding: 10px;
+    background-color: #A8A9AE;
+    border-top: 2px solid black;
+}
+footer nav ul {
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+}
+footer nav ul li {
+    margin: 0 10px;
+}
+</style>
