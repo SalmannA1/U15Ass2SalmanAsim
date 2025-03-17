@@ -70,6 +70,7 @@ body {
     padding: 0;
     text-align: center;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -78,19 +79,23 @@ header {
     background-color: #A8A9AE;
     border-bottom: 2px solid black;
 }
+
 .logo img {
     width: 60px;
     height: 60px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
+
 nav ul li {
     margin: 0 10px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: black;
@@ -101,178 +106,60 @@ nav ul li a {
     border-radius: 5px; /* Rounded corners for buttons */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
+
 nav ul li a:hover {
     background-color: #ddd; /* Hover effect for buttons */
 }
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
+
 main {
     padding: 20px;
 }
+
 footer {
     padding: 10px;
     background-color: #A8A9AE;
     border-top: 2px solid black;
 }
-footer nav ul {
-    justify-content: center;
-    display: flex;
-    padding: 10px 0;
-}
-footer nav ul li {
-    margin: 0 10px;
-}
 
-/* Charity Impact Section */
-.charity-impact {
+/* Additional styles for sections */
+.charity-impact, .games-section, .support-section, .intro {
     padding: 40px 0;
     background-color: #f8fafc;
-    position: relative;
 }
-.impact-grid {
+
+.impact-grid, .games-grid, .support-grid, .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
 }
-.impact-card {
+
+.impact-card, .game-card, .support-card, .feature {
     background-color: #fff;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
+    padding: 20px;
 }
-.impact-card:hover {
+
+.impact-card:hover, .game-card:hover, .support-card:hover, .feature:hover {
     transform: translateY(-5px);
 }
-.impact-card img {
+
+.impact-card img, .support-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-.impact-card h3 {
+
+.impact-card h3, .support-card h3, .feature h3 {
     color: #333;
-    font-size: 2rem;
     margin: 20px 0 10px;
 }
-.impact-card p {
+
+.impact-card p, .support-card p, .feature p {
     color: #666;
     padding: 0 20px 20px;
-}
-
-/* Educational Games Section */
-.games-section {
-    padding: 40px 0;
-    background-color: #f8fafc;
-}
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-.game-card {
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-.game-card:hover {
-    transform: translateY(-5px);
-}
-.game-icon {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 10px;
-    border-radius: 50%;
-}
-.game-title {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-}
-.game-description {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Support Section */
-.support-section {
-    padding: 40px 0;
-    background-color: #fff;
-}
-.support-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-.support-card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    text-align: center;
-}
-.support-card:hover {
-    transform: translateY(-5px);
-}
-.support-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.support-card h3 {
-    color: #333;
-    margin: 20px 0 10px;
-}
-.support-card p {
-    color: #666;
-    padding: 0 20px;
-    margin-bottom: 20px;
-}
-.support-card .button {
-    display: inline-block;
-    padding: 10px 20px; /* Added padding for button effect */
-    background-color: #f4f4f4; /* Background color for buttons */
-    border: 1px solid #ccc; /* Border for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Text color */
-}
-.support-card .button:hover {
-    background-color: #ddd; /* Hover effect for buttons */
-}
-
-/* Introduction Section */
-.intro {
-    padding: 40px 0;
-    position: relative;
-    background-color: #fff;
-}
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-.feature {
-    background: #f1f1f1;
-    padding: 20px;
-    border-radius: 5px;
-}
-.feature h3 {
-    margin-bottom: 10px;
-}
-.feature p {
-    color: #666;
 }
 </style>
