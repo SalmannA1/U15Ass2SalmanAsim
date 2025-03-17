@@ -3,58 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Links - Slovenské Vzdelávacie Centrum</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Educational Games - Slovenské Vzdelávacie Centrum</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <!-- Header section with logo and navigation menu -->
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Image.jpg" alt="logo">
+            <img src="../images/Image.jpg" alt="logo">
         </div>
         <h1>Slovenské Vzdelávacie Centrum – Manchester</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Homepage</a></li>
-                <li><a href="pages/aboutus.html">About Us</a></li>
-                <li><a href="pages/signup.html">Sign Up</a></li>
-                <li><a href="pages/dates-fees.html">Dates & Fees</a></li>
-                <li><a href="pages/educational-games.html">Educational Games</a></li>
-                <li><a href="pages/events-history.html">Events History</a></li>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="dates-fees.html">Dates & Fees</a></li>
+                <li><a href="educational-games.html" class="active">Educational Games</a></li>
+                <li><a href="events-history.html">Events History</a></li>
             </ul>
         </nav>
     </header>
     
-    <!-- Main content section -->
+    <!-- Main Content -->
     <main>
-        <h2>Educational Links</h2>
-        <h3>Useful Links to Use</h3>
-        <p>Here, we have gathered a selection of helpful resources related to Slovak language learning, culture, education, and community support. Whether you are looking for online learning materials, official Slovak institutions, or community networks, these links can help you stay connected and informed.</p>
-        
-        <h3>Slovak Language Learning & Education</h3>
-        <ul>
-            <li><a href="#">Wordwall Slovak Practice – Interactive Slovak language exercises. (actual link available soon)</a></li>
-            <li><a href="#">Ministry of Education of the Slovak Republic – Official website for Slovak education policies, curriculum, and school registration information.</a></li>
-            <li><a href="#">Slovak Schools & Community Centers in the UK – Association supporting Slovak language education across the UK. (Insert actual link if applicable.)</a></li>
-        </ul>
-        
-        <h3>Slovak Culture & Community</h3>
-        <ul>
-            <li><a href="#">Úrad pre Slovákov žijúcich v zahraničí – Slovak government office supporting Slovaks living abroad.</a></li>
-            <li><a href="#">ISEIA (International Slovak Educational Institutions & Associations) – Connecting Slovak educators and institutions worldwide. (Insert actual link if available.)</a></li>
-            <li><a href="#">Univerzita Mateja Bela – Our academic partner, supporting Slovak language and cultural education.</a></li>
-        </ul>
-        
-        <h3>Partner Organizations & Supporters</h3>
-        <ul>
-            <li><a href="#">Manchester College – Our partner in educational projects and website development.</a></li>
-            <li><a href="#">Porta134 Café – Supporting us by providing event space, refreshments, and an art display area for our students. (Insert link if available.)</a></li>
-        </ul>
+        <h2>Educational Games</h2>
+        <div class="games-section">
+            <div class="container">
+                <div class="games-grid">
+                    <div class="game-card" data-link="https://slovake.eu/en/learning/games">
+                        <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?w=64&h=64&fit=crop" alt="Vocabulary Game" class="game-icon">
+                        <h3 class="game-title">Slovake.eu Games</h3>
+                        <p class="game-description">Interactive vocabulary and grammar games</p>
+                    </div>
+                    <div class="game-card" data-link="https://www.digitaldialects.com/Slovak.htm">
+                        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=64&h=64&fit=crop" alt="Digital Dialects" class="game-icon">
+                        <h3 class="game-title">Digital Dialects</h3>
+                        <p class="game-description">Basic Slovak vocabulary games</p>
+                    </div>
+                    <div class="game-card" data-link="https://www.memrise.com/courses/english/slovak/">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=64&h=64&fit=crop" alt="Memrise" class="game-icon">
+                        <h3 class="game-title">Memrise Courses</h3>
+                        <p class="game-description">Memory-based learning games</p>
+                    </div>
+                    <div class="game-card" data-link="https://www.duolingo.com/course/sk/en/Learn-Slovak">
+                        <img src="https://images.unsplash.com/photo-1546521343-4eb2c9aa8454?w=64&h=64&fit=crop" alt="Duolingo" class="game-icon">
+                        <h3 class="game-title">Duolingo Slovak</h3>
+                        <p class="game-description">Gamified language learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     
-    <!-- Footer section -->
+    <!-- Footer -->
     <footer>
         <nav>
             <ul>
@@ -68,17 +72,19 @@
         </nav>
         <p>&copy; 2023 Charity Organization</p>
     </footer>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
 <style>
     /* General styles */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f5f5f5;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -88,11 +94,21 @@ header {
     padding: 20px 40px;
     background-color: #e60000;
     color: #fff;
+    width: 100%;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 nav ul {
@@ -103,14 +119,17 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
     padding: 10px 20px;
+    background-color: #e60000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -119,36 +138,81 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 40px;
+    flex: 1;
+    padding: 40px 20px;
     background-color: #fff;
     color: #333;
-}
-
-h2, h3 {
-    color: #e60000;
-}
-
-ul {
-    text-align: left;
-    margin: 20px auto;
-    padding: 0;
+    width: 100%;
     max-width: 800px;
-    list-style-type: none;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-ul li a {
+h2 {
     color: #e60000;
-    text-decoration: none;
-    font-weight: 500;
+    text-align: center;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+.form-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.form-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #4fa3f7;
+    outline: none;
+}
+
+button {
+    background-color: #4fa3f7;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3578e5;
 }
 
 footer {
@@ -156,6 +220,8 @@ footer {
     background-color: #e60000;
     color: #fff;
     border-top: 2px solid #333;
+    width: 100%;
+    text-align: center;
 }
 
 footer nav ul {
@@ -167,5 +233,67 @@ footer nav ul {
 footer nav ul li {
     margin: 0 10px;
 }
-</style>
 
+.games-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.game-title {
+    color: #e60000;
+    margin: 20px 0 10px;
+}
+
+.game-description {
+    color: #666;
+    padding: 0 20px 20px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const gameCards = document.querySelectorAll('.game-card');
+
+    gameCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const link = card.getAttribute('data-link');
+            window.open(link, '_blank');
+        });
+    });
+});
+</script>
