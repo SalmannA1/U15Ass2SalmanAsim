@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Links - Slovenské Vzdelávacie Centrum</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
         <h1>Slovenské Vzdelávacie Centrum – Manchester</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="../index.html" class="active">Homepage</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
                 <li><a href="dates-fees.html">Dates & Fees</a></li>
@@ -34,22 +35,22 @@
         
         <h3>Slovak Language Learning & Education</h3>
         <ul>
-            <li>Wordwall Slovak Practice – Interactive Slovak language exercises. (actual link available soon)</li>
-            <li>Ministry of Education of the Slovak Republic – Official website for Slovak education policies, curriculum, and school registration information.</li>
-            <li>Slovak Schools & Community Centers in the UK – Association supporting Slovak language education across the UK. (Insert actual link if applicable.)</li>
+            <li><a href="#">Wordwall Slovak Practice – Interactive Slovak language exercises. (actual link available soon)</a></li>
+            <li><a href="#">Ministry of Education of the Slovak Republic – Official website for Slovak education policies, curriculum, and school registration information.</a></li>
+            <li><a href="#">Slovak Schools & Community Centers in the UK – Association supporting Slovak language education across the UK. (Insert actual link if applicable.)</a></li>
         </ul>
         
         <h3>Slovak Culture & Community</h3>
         <ul>
-            <li>Úrad pre Slovákov žijúcich v zahraničí – Slovak government office supporting Slovaks living abroad.</li>
-            <li>ISEIA (International Slovak Educational Institutions & Associations) – Connecting Slovak educators and institutions worldwide. (Insert actual link if available.)</li>
-            <li>Univerzita Mateja Bela – Our academic partner, supporting Slovak language and cultural education.</li>
+            <li><a href="#">Úrad pre Slovákov žijúcich v zahraničí – Slovak government office supporting Slovaks living abroad.</a></li>
+            <li><a href="#">ISEIA (International Slovak Educational Institutions & Associations) – Connecting Slovak educators and institutions worldwide. (Insert actual link if available.)</a></li>
+            <li><a href="#">Univerzita Mateja Bela – Our academic partner, supporting Slovak language and cultural education.</a></li>
         </ul>
         
         <h3>Partner Organizations & Supporters</h3>
         <ul>
-            <li>Manchester College – Our partner in educational projects and website development.</li>
-            <li>Porta134 Café – Supporting us by providing event space, refreshments, and an art display area for our students. (Insert link if available.)</li>
+            <li><a href="#">Manchester College – Our partner in educational projects and website development.</a></li>
+            <li><a href="#">Porta134 Café – Supporting us by providing event space, refreshments, and an art display area for our students. (Insert link if available.)</a></li>
         </ul>
     </main>
     
@@ -72,63 +73,97 @@
 <style>
     /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f5f5f5;
+    color: #333;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #A8A9AE;
-    border-bottom: 2px solid black;
+    padding: 20px 40px;
+    background-color: #e60000;
+    color: #fff;
 }
+
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
+
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 20px; /* Added padding for button effect */
-    background-color: #f4f4f4; /* Background color for buttons */
-    border: 1px solid #ccc; /* Border for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
+
 nav ul li a:hover {
-    background-color: #ddd; /* Hover effect for buttons */
+    background-color: #cc0000;
 }
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
+
 main {
-    padding: 20px;
+    padding: 40px;
+    background-color: #fff;
+    color: #333;
 }
-footer {
+
+h2, h3 {
+    color: #e60000;
+}
+
+ul {
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 800px;
+    list-style-type: none;
+}
+
+ul li {
     padding: 10px;
-    background-color: #A8A9AE;
-    border-top: 2px solid black;
+    border-bottom: 1px solid #ccc;
 }
+
+ul li a {
+    color: #e60000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 20px;
+    background-color: #e60000;
+    color: #fff;
+    border-top: 2px solid #333;
+}
+
 footer nav ul {
     justify-content: center;
     display: flex;
     padding: 10px 0;
 }
+
 footer nav ul li {
     margin: 0 10px;
 }
