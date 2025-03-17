@@ -9,7 +9,7 @@ header {
    justify-content: space-between;
    align-items: center;
    padding: 10px 20px;
-   background-color: #f5f5f5;
+   background-color: #A8A9AE;
    border-bottom: 2px solid black;
 }
 .logo img {
@@ -40,7 +40,7 @@ main {
 }
 footer {
    padding: 10px;
-   background-color: #f5f5f5;
+   background-color: #A8A9AE;
    border-top: 2px solid black;
 }
 footer nav ul {
