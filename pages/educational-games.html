@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="css/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Links - Slovenské Vzdelávacie Centrum</title>
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Charity Homepage</title>
 </head>
 <body>
+    <!-- Header section with logo and navigation menu -->
     <header>
         <div class="logo">
             <img src="../images/Image.jpg" alt="logo">
@@ -24,84 +25,112 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- Main content section -->
     <main>
-        <h2>Educational Links!</h2>
-        <h2> Useful Links to Use</h2>
+        <h2>Educational Links</h2>
+        <h3>Useful Links to Use</h3>
         <p>Here, we have gathered a selection of helpful resources related to Slovak language learning, culture, education, and community support. Whether you are looking for online learning materials, official Slovak institutions, or community networks, these links can help you stay connected and informed.</p>
-        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        <h2>Slovak Language Learning & Education</h2>
-        <p>· Wordwall Slovak Practice – Interactive Slovak language exercises. (actual link available soon)</p>
-        <p>· Ministry of Education of the Slovak Republic – Official website for Slovak education policies, curriculum, and school registration information.</p>
-        <p>· Slovak Schools & Community Centers in the UK – Association supporting Slovak language education across the UK. (Insert actual link if applicable.)</p>
-        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        <h2>Slovak Culture & Community</h2>
-        <p>· Úrad pre Slovákov žijúcich v zahraničí – Slovak government office supporting Slovaks living abroad.</p>
-        <p>· ISEIA (International Slovak Educational Institutions & Associations) – Connecting Slovak educators and institutions worldwide. (Insert actual link if available.)</p>
-        <p>· Univerzita Mateja Bela – Our academic partner, supporting Slovak language and cultural education.</p>
-        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        <h2>Partner Organizations & Supporters</h2>
-        <p>· Manchester College – Our partner in educational projects and website development.</p>
-        <p>· Porta134 Café – Supporting us by providing event space, refreshments, and an art display area for our students. (Insert link if available.)</p>
-
+        
+        <h3>Slovak Language Learning & Education</h3>
+        <ul>
+            <li>Wordwall Slovak Practice – Interactive Slovak language exercises. (actual link available soon)</li>
+            <li>Ministry of Education of the Slovak Republic – Official website for Slovak education policies, curriculum, and school registration information.</li>
+            <li>Slovak Schools & Community Centers in the UK – Association supporting Slovak language education across the UK. (Insert actual link if applicable.)</li>
+        </ul>
+        
+        <h3>Slovak Culture & Community</h3>
+        <ul>
+            <li>Úrad pre Slovákov žijúcich v zahraničí – Slovak government office supporting Slovaks living abroad.</li>
+            <li>ISEIA (International Slovak Educational Institutions & Associations) – Connecting Slovak educators and institutions worldwide. (Insert actual link if available.)</li>
+            <li>Univerzita Mateja Bela – Our academic partner, supporting Slovak language and cultural education.</li>
+        </ul>
+        
+        <h3>Partner Organizations & Supporters</h3>
+        <ul>
+            <li>Manchester College – Our partner in educational projects and website development.</li>
+            <li>Porta134 Café – Supporting us by providing event space, refreshments, and an art display area for our students. (Insert link if available.)</li>
+        </ul>
     </main>
+    
+    <!-- Footer section -->
     <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="dates-fees.html">Dates & Fees</a></li>
+                <li><a href="educational-games.html">Educational Games</a></li>
+                <li><a href="events-history.html">Events History</a></li>
+            </ul>
+        </nav>
         <p>&copy; 2023 Charity Organization</p>
     </footer>
 </body>
 </html>
-  <style>
-                  body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   text-align: center;
+<style>
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
-   background-color: #A8A9AE;
-   border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A8A9AE;
+    border-bottom: 2px solid black;
 }
 .logo img {
-   width: 60px;
-   height: 60px;
+    width: 60px;
+    height: 60px;
 }
 nav ul {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 nav ul li {
-   margin: 0 10px;
+    margin: 0 10px;
 }
 nav ul li a {
-   text-decoration: none;
-   color: black;
-   font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px; /* Added padding for button effect */
+    background-color: #f4f4f4; /* Background color for buttons */
+    border: 1px solid #ccc; /* Border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+nav ul li a:hover {
+    background-color: #ddd; /* Hover effect for buttons */
 }
 .social-icons img {
-   width: 30px;
-   height: 30px;
-   margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
 }
 main {
-   padding: 20px;
+    padding: 20px;
 }
 footer {
-   padding: 10px;
-   background-color: #A8A9AE;
-   border-top: 2px solid black;
+    padding: 10px;
+    background-color: #A8A9AE;
+    border-top: 2px solid black;
 }
 footer nav ul {
-   justify-content: center;
-   display: flex;
-   padding: 10px 0;
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
 }
 footer nav ul li {
-   margin: 0 10px;
+    margin: 0 10px;
 }
-            </style>
+</style>
 
