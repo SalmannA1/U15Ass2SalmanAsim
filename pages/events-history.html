@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events History - Slovenské Vzdelávacie Centrum</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
         <h1>Slovenské Vzdelávacie Centrum – Manchester</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="../index.html" class="active">Homepage</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
                 <li><a href="dates-fees.html">Dates & Fees</a></li>
@@ -63,63 +64,74 @@
 <style>
     /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f5f5f5;
+    color: #333;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #A8A9AE;
-    border-bottom: 2px solid black;
+    padding: 20px 40px;
+    background-color: #e60000;
+    color: #fff;
 }
+
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
+
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 20px; /* Added padding for button effect */
-    background-color: #f4f4f4; /* Background color for buttons */
-    border: 1px solid #ccc; /* Border for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
+
 nav ul li a:hover {
-    background-color: #ddd; /* Hover effect for buttons */
+    background-color: #cc0000;
 }
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
+
 main {
-    padding: 20px;
+    padding: 40px;
+    background-color: #fff;
+    color: #333;
 }
+
+h2 {
+    color: #e60000;
+}
+
 footer {
-    padding: 10px;
-    background-color: #A8A9AE;
-    border-top: 2px solid black;
+    padding: 20px;
+    background-color: #e60000;
+    color: #fff;
+    border-top: 2px solid #333;
 }
+
 footer nav ul {
     justify-content: center;
     display: flex;
     padding: 10px 0;
 }
+
 footer nav ul li {
     margin: 0 10px;
 }
