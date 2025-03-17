@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.savethechildren.org.uk/content/dam/gb/rebrand/css/main.css">
+    <!-- Link to the JavaScript file -->
+<script src="js/script.js" defer></script>
     <title>Charity Homepage</title>
 </head>
 <body>
@@ -248,4 +250,25 @@ footer {
     background-color: #cc0000;
 }
 </style>
-
+<script>
+    // Educational games interaction
+    const gameCards = document.querySelectorAll('.game-card');
+    gameCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const link = card.getAttribute('data-link');
+            if (link) {
+                window.open(link, '_blank');
+            }
+        });
+ 
+        // Add hover effect
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-10px)';
+        });
+ 
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+        });
+    });
+});
+</script>
